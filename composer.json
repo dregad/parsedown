@@ -10,6 +10,17 @@
             "name": "Emanuil Rusev",
             "email": "hello@erusev.com",
             "homepage": "https://erusev.com"
+        },
+        {
+            "name": "Aidan Woods",
+            "email": "aidantwoods@gmail.com",
+            "homepage": "https://aidanwoods.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Damien Regad",
+            "email": "dregad@mantisbt.org",
+            "role": "Fork Maintainer"
         }
     ],
     "require": {

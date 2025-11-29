@@ -1,8 +1,10 @@
 # Parsedown
 
-[![Total Downloads](https://poser.pugx.org/erusev/parsedown/d/total.svg)](https://packagist.org/packages/erusev/parsedown)
-[![Version](https://poser.pugx.org/erusev/parsedown/v/stable.svg)](https://packagist.org/packages/erusev/parsedown)
-[![License](https://poser.pugx.org/erusev/parsedown/license.svg)](https://packagist.org/packages/erusev/parsedown)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/parsedown/parsedown/unit-tests.yaml?logo=github%20actions&logoColor=white)](https://github.com/parsedown/parsedown/actions/workflows/unit-tests.yaml)
+![Packagist Version](https://img.shields.io/packagist/v/parsedown/parsedown?label=stable)
+[![Packagist Total Downloads](https://img.shields.io/packagist/dt//parsedown?color=blue)](https://packagist.org/packages/parsedown/parsedown)
+[![GitHub License](https://img.shields.io/github/license/parsedown/parsedown?color=teal)
+](https://github.com/parsedown/parsedown?tab=MIT-1-ov-file#MIT-1-ov-file)
 
 Better Markdown Parser in PHP — [demo](https://parsedown.org/demo)
 

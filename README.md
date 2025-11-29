@@ -5,6 +5,7 @@
 [![Packagist Total Downloads](https://img.shields.io/packagist/dt//parsedown?color=blue)](https://packagist.org/packages/parsedown/parsedown)
 [![GitHub License](https://img.shields.io/github/license/parsedown/parsedown?color=teal)
 ](https://github.com/parsedown/parsedown?tab=MIT-1-ov-file#MIT-1-ov-file)
+[![Matrix](https://img.shields.io/matrix/parsedown%3Amatrix.org?logo=element)](https://matrix.to/#/#parsedown:matrix.org)
 
 Better Markdown Parser in PHP — [demo](https://parsedown.org/demo)
 

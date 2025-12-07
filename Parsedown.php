@@ -3,10 +3,10 @@
 #
 #
 # Parsedown
-# http://parsedown.org
+# https://parsedown.org
 #
-# (c) Emanuil Rusev
-# http://erusev.com
+# (c) Emanuil Rusev - https://erusev.com
+# (c) Parsedown Community - https://github.com/orgs/parsedown/people
 #
 # For the full license information, view the LICENSE file that was distributed
 # with this source code.
@@ -173,7 +173,7 @@ class Parsedown
         {
             if (chop($line) === '')
             {
-                if (isset($CurrentBlock))
+                if (!empty($CurrentBlock))
                 {
                     $CurrentBlock['interrupted'] = (isset($CurrentBlock['interrupted'])
                         ? $CurrentBlock['interrupted'] + 1 : 1
@@ -346,7 +346,7 @@ class Parsedown
     #
     # Code
 
-    protected function blockCode($Line, $Block = null)
+    protected function blockCode($Line, $Block = array())
     {
         if (isset($Block) and $Block['type'] === 'Paragraph' and ! isset($Block['interrupted']))
         {

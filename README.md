@@ -1,19 +1,27 @@
 # Parsedown
 
-[![Total Downloads](https://poser.pugx.org/erusev/parsedown/d/total.svg)](https://packagist.org/packages/erusev/parsedown)
-[![Version](https://poser.pugx.org/erusev/parsedown/v/stable.svg)](https://packagist.org/packages/erusev/parsedown)
-[![License](https://poser.pugx.org/erusev/parsedown/license.svg)](https://packagist.org/packages/erusev/parsedown)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/parsedown/parsedown/unit-tests.yaml?logo=github%20actions&logoColor=white)](https://github.com/parsedown/parsedown/actions/workflows/unit-tests.yaml)
+![Packagist Version](https://img.shields.io/packagist/v/parsedown/parsedown?label=stable)
+[![Packagist Total Downloads](https://img.shields.io/packagist/dt//parsedown?color=blue)](https://packagist.org/packages/parsedown/parsedown)
+[![GitHub License](https://img.shields.io/github/license/parsedown/parsedown?color=teal)
+](https://github.com/parsedown/parsedown?tab=MIT-1-ov-file#MIT-1-ov-file)
+[![Matrix](https://img.shields.io/matrix/parsedown%3Amatrix.org?logo=element)](https://matrix.to/#/#parsedown:matrix.org)
 
-Better Markdown Parser in PHP — <a href="https://parsedown.org/demo">demo</a>
+Better Markdown Parser in PHP — [demo](https://parsedown.org/demo)
+
+> [!NOTE]
+> **This is a Community-maintained Fork of the 
+> [Original Parsedown](https://github.com/erusev/parsedown)** library 
+> written by [Emanuil Rusev](https://github.com/erusev).
 
 ## Features
 
 - One file
 - No dependencies
-- [Super fast](http://parsedown.org/speed)
+- [Super fast](https://parsedown.org/speed)
 - Extensible
 - [GitHub flavored](https://github.github.com/gfm)
-- [Tested](http://parsedown.org/tests/) in 5.3 to 7.3
+- [Tested](https://parsedown.org/tests/) in 5.3 to 8.5
 - [Markdown Extra extension](https://github.com/erusev/parsedown-extra)
 
 ## Installation
@@ -26,8 +34,8 @@ composer require erusev/parsedown
 
 Or download the [latest release] and include `Parsedown.php`
 
-[composer package]: https://packagist.org/packages/erusev/parsedown "The Parsedown package on packagist.org"
-[latest release]: https://github.com/erusev/parsedown/releases/latest "The latest release of Parsedown"
+[composer package]: https://packagist.org/packages/parsedown/parsedown "The Parsedown package on packagist.org"
+[latest release]: https://github.com/parsedown/parsedown/releases/latest "The latest release of Parsedown"
 
 ## Example
 
@@ -43,7 +51,7 @@ You can also parse inline markdown only:
 echo $Parsedown->line('Hello _Parsedown_!'); # prints: Hello <em>Parsedown</em>!
 ```
 
-More examples in [the wiki](https://github.com/erusev/parsedown/wiki/) and in [this video tutorial](http://youtu.be/wYZBY8DEikI).
+More examples in [the wiki](https://github.com/erusev/parsedown/wiki/) and in [this video tutorial](https://youtu.be/wYZBY8DEikI).
 
 ## Security
 
@@ -73,26 +81,33 @@ $Parsedown->setMarkupEscaped(true);
 
 Beware that this still allows users to insert unsafe scripting vectors, ex: `[xss](javascript:alert%281%29)`.
 
-## Questions
+## Frequently Asked Questions
 
-**How does Parsedown work?**
+### How does Parsedown work?
 
 It tries to read Markdown like a human. First, it looks at the lines. It’s interested in how the lines start. This helps it recognise blocks. It knows, for example, that if a line starts with a `-` then perhaps it belongs to a list. Once it recognises the blocks, it continues to the content. As it reads, it watches out for special characters. This helps it recognise inline elements (or inlines).
 
 We call this approach "line based". We believe that Parsedown is the first Markdown parser to use it. Since the release of Parsedown, other developers have used the same approach to develop other Markdown parsers in PHP and in other languages.
 
-**Is it compliant with CommonMark?**
+### Is it compliant with CommonMark?
 
 It passes most of the CommonMark tests. Most of the tests that don't pass deal with cases that are quite uncommon. Still, as CommonMark matures, compliance should improve.
 
-**Who uses it?**
+### Who uses it?
 
-[Laravel Framework](https://laravel.com/), [Bolt CMS](http://bolt.cm/), [Grav CMS](http://getgrav.org/), [Herbie CMS](http://www.getherbie.org/), [Kirby CMS](http://getkirby.com/), [October CMS](http://octobercms.com/), [Pico CMS](http://picocms.org), [Statamic CMS](http://www.statamic.com/), [phpDocumentor](http://www.phpdoc.org/), [RaspberryPi.org](http://www.raspberrypi.org/), [Symfony Demo](https://github.com/symfony/demo) and [more](https://packagist.org/packages/erusev/parsedown/dependents).
+[Laravel Framework](https://laravel.com/),
+[Bolt CMS](https://bolt.cm/),
+[Grav CMS](https://getgrav.org/),
+[Herbie CMS](https://herbie.tebe.ch/),
+[Kirby CMS](https://getkirby.com/),
+[October CMS](https://octobercms.com/),
+[Pico CMS](https://picocms.org),
+[Statamic CMS](https://www.statamic.com/),
+[phpDocumentor](https://www.phpdoc.org/),
+[RaspberryPi.org](https://www.raspberrypi.org/),
+[Symfony Demo](https://github.com/symfony/demo)
+and [more](https://packagist.org/packages/erusev/parsedown/dependents).
 
-**How can I help?**
+### How can I help?
 
 Use it, star it, share it and if you feel generous, [donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=528P3NZQMP8N2).
-
-**What else should I know?**
-
-I also make [Nota](https://nota.md/) — a notes app designed for local Markdown files.
